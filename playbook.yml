@@ -4,11 +4,8 @@
   connection: httpapi
   
   tasks:
-   - name: Run show version on remote devices
-     bigip_command:
-      commands: show sys version
-      register: result
-   - name: print result
-     debug:
-      msg: "{{ result }}"
-      
+    - name: Collect BIG-IP information
+      bigip_device_info:
+        gather_subset:
+          - interfaces
+          - vlans

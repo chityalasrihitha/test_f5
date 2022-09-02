@@ -6,9 +6,9 @@
   tasks:
    - name: Run show version on remote devices
      bigip_command:
-     commands: show sys version
-     register: result
+      commands: show sys version
+      register: result
    - name: print result
      debug:
-       msg: "{{ result }}"
+      msg: "{{ result }}"
       

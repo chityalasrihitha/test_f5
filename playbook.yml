@@ -2,6 +2,7 @@
   collections:
     - f5networks.f5_bigip
   connection: httpapi
+  validate_certs: false
   
   tasks:
    - name: Run show version on remote devices

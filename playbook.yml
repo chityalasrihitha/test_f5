@@ -8,6 +8,7 @@
      bigip_command:
      commands: show sys version
      register: result
+   - name: print result
      debug:
        msg: "{{ result }}"
       

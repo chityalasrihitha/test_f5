@@ -1,7 +1,6 @@
 - hosts: MTL-F5-DR
   collections:
     - f5networks.f5_bigip
-  connection: httpapi
   
   tasks:
     - name: Run show version on remote devices
